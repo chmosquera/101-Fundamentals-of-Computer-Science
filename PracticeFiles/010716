@@ -1,0 +1,7 @@
+age = raw_input('How old are you? ')
+
+print "You are ", age, "?" 
+
+name = raw_input("What was your name again?")
+
+print "Ah, yes. ", name, "!"

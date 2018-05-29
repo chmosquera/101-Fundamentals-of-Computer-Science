@@ -1,0 +1,34 @@
+#Name: Chanelle Mosquera
+#Section: 101-16
+
+import unittest
+import funcs
+
+class TestCases(unittest.TestCase):
+   def test_poundsToKG(self):
+      self.assertEqual(funcs.poundsToKG(60.0), 27.215519999999998)
+      self.assertEqual(funcs.poundsToKG(185.0), 83.91452)
+      pass
+
+   def test_getMassObject(self):
+      self.assertEqual(funcs.getMassObject('t'), 0.1)
+      self.assertEqual(funcs.getMassObject('p'), 1.0)
+      self.assertEqual(funcs.getMassObject('r'), 3.0)
+      self.assertEqual(funcs.getMassObject('l'), 9.07)
+      self.assertEqual(funcs.getMassObject('b'), 0.0)
+      pass
+
+   def test_getVelocityObject(self):
+      self.assertEqual(funcs.getVelocityObject(6.0), 5.4221766846903838)
+      self.assertEqual(funcs.getVelocityObject(1.0), 2.2135943621178655)
+      pass
+
+   def test_getVelocitySkater(self):
+      self.assertEqual(funcs.getVelocitySkater(60, 1.0, 5), .083333333333333329)
+      self.assertEqual(funcs.getVelocitySkater(190, 9.07, 3), .1432105263)
+
+      pass
+
+# Run the unit tests.
+if __name__ == '__main__':
+   unittest.main()

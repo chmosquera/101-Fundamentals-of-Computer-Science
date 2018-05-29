@@ -1,0 +1,197 @@
+cmosquer@csc303x29:/home/cmosquer $ ls
+cpe101	 Documents  lab1      Music	Public	   Videos
+Desktop  Downloads  lab1.zip  Pictures	Templates  www
+cmosquer@csc303x29:/home/cmosquer $ pwd
+/home/cmosquer
+cmosquer@csc303x29:/home/cmosquer $ tree
+.
+├── Desktop
+│   └── CPE 123 Lab 2
+├── Documents
+│   ├── chicken.wav
+│   ├── CPE 123 -- Lab 2~
+│   ├── CPE 123 Lab 2
+│   ├── CPE 123 Lab 2~
+│   ├── CPE 123 Lab 3
+│   ├── CPE 123 Lab 3~
+│   ├── duck.wav
+│   ├── Final Project
+│   │   ├── coldplay.wav
+│   │   ├── CPE Assignment 2.docx
+│   │   ├── Final Proj
+│   │   ├── Final Proj~
+│   │   ├── playhead.png
+│   │   ├── sean_paul.wav
+│   │   ├── skyfall.wav
+│   │   ├── SongCry.wav
+│   │   ├── tenerife_sea.wav
+│   │   ├── time-box.png
+│   │   ├── time-line1.png
+│   │   ├── time-line2.png
+│   │   ├── volume-box.png
+│   │   ├── volume-head.png
+│   │   └── volume-line.png
+│   ├── Lab 1 - Tiny Exercises
+│   ├── Lab 1 - Tiny Exercises~
+│   └── monkey.wav
+├── Downloads
+│   ├── 2014-11-3-notes-list.rkt
+│   ├── 2015-10-14.rkt
+│   ├── CPE_123_-_Final_Project-2015-12-04.zip
+│   ├── Ed Sheeran - Tenerife Sea (Guitar Cover _ Instrumental).mp3
+│   ├── Lab 6.rkt
+│   ├── lab 7.rkt
+│   └── TenerifeSea.wav
+├── lab1
+│   ├── lab1.py
+│   ├── lab1_test_cases.py
+│   └── printing
+│       └── printing.py
+├── lab1.zip
+├── Music
+├── Pictures
+│   └── turtle.jpg
+├── Public
+├── Templates
+├── Videos
+└── www
+
+12 directories, 38 files
+cmosquer@csc303x29:/home/cmosquer $ mkdir cpe101
+cmosquer@csc303x29:/home/cmosquer $ ls cpe101
+cmosquer@csc303x29:/home/cmosquer $ ls
+cpe101	 Documents  lab1      Music	Public	   Videos
+Desktop  Downloads  lab1.zip  Pictures	Templates  www
+cmosquer@csc303x29:/home/cmosquer $ cd cpe101
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ cd ..
+cmosquer@csc303x29:/home/cmosquer $ mv ~/Downloads/lab1.zip
+mv: missing destination file operand after `//home/cmosquer/Downloads/lab1.zip'
+Try `mv --help' for more information.
+cmosquer@csc303x29:/home/cmosquer $ cd cpe101
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ mv ~/Downloads/lab1.zip
+mv: missing destination file operand after `//home/cmosquer/Downloads/lab1.zip'
+Try `mv --help' for more information.
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ mv ~/Downloads/lab1.zip
+mv: missing destination file operand after `//home/cmosquer/Downloads/lab1.zip'
+Try `mv --help' for more information.
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ mv~/Downloads/lab1.zip
+bash: mv~/Downloads/lab1.zip: No such file or directory
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ mv ~/Downloads/lab1.zip .
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ unzip lab1.zip
+Archive:  lab1.zip
+   creating: lab1/
+  inflating: lab1/lab1.py            
+  inflating: lab1/lab1_test_cases.py  
+   creating: lab1/printing/
+  inflating: lab1/printing/printing.py  
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ nano -Ec lab1.py
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ nano -Ec lab1.py
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ python lab1.py
+python: can't open file 'lab1.py': [Errno 2] No such file or directory
+cmosquer@csc303x29:/home/cmosquer/cpe101 $ cd lab1
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1 $ nano -Ec lab1.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1 $ python
+Python 2.6.6 (r266:84292, Jul 23 2015, 15:22:56) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-11)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 0+1
+1
+>>> 2*2
+4
+>>> 19/3
+6
+>>> 19/3.0
+6.333333333333333
+>>> 19//3.0
+6.0
+>>> 19.0/3.0
+6.333333333333333
+>>> 4*2+27/3.0+4
+21.0
+>>> 4*(2+27)//3.0+4
+42.0
+>>> nano -EC python lab1_test_cases.py
+  File "<stdin>", line 1
+    nano -EC python lab1_test_cases.py
+                  ^
+SyntaxError: invalid syntax
+>>> nano -EC python lab1_test_cases.py
+  File "<stdin>", line 1
+    nano -EC python lab1_test_cases.py
+                  ^
+SyntaxError: invalid syntax
+>>> 
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1 $ nano -Ec python lab1_test_cases.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1 $ python lab1_test_cases.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1 $ cd printing
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec printing.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing.py
+  File "printing.py", line 6
+    print "Entered print_examples function.\n"
+    ^
+IndentationError: unexpected indent
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec printing.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing.py
+  File "printing.py", line 6
+    print "Entered print_examples function.\n"
+                                             ^
+IndentationError: unindent does not match any outer indentation level
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec printing.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+  File "lab1_input.py", line 1
+    name = raw_input('What is your name?)
+                                        ^
+SyntaxError: EOL while scanning string literal
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+  File "lab1_input.py", line 3
+    print "Hello, " name
+                       ^
+SyntaxError: invalid syntax
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+What is your name? Chanelle
+Hello,  Chanelle
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+  File "lab1_input.py", line 3
+    print "Hello, ", name "!"
+                            ^
+SyntaxError: invalid syntax
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+What is your name? Chanelle
+Hello,  Chanelle !
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+What is your name? Chanelle
+Hello,  Chanelle !
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec lab1_input.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python lab1_input.py
+What is your name? Chanelle
+Hello,  Chanelle !
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing
+python: can't open file 'printing': [Errno 2] No such file or directory
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing.py
+  File "printing.py", line 6
+    print "Entered print_examples function.\n"
+                                             ^
+IndentationError: unindent does not match any outer indentation level
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ nano -Ec printing.py
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ python printing.py
+Entered print_examples function.
+
+n: 2
+n: 99 	m: 4
+f: 42.7
+cmosquer@csc303x29:/home/cmosquer/cpe101/lab1/printing $ 

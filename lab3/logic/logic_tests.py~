@@ -1,0 +1,31 @@
+#Name: Chanelle Mosquera
+#Section: 101-16
+
+import unittest
+import logic
+
+class TestCases(unittest.TestCase):
+   def test_is_even(self):
+      self.assertTrue(logic.is_even(10))
+      self.assertFalse(logic.is_even(9))
+      pass
+
+   def test_in_an_interval(self):
+      self.assertEqual(logic.in_an_interval(2), True)
+      self.assertEqual(logic.in_an_interval(4), True)
+      self.assertEqual(logic.in_an_interval(9), False)
+      self.assertEqual(logic.in_an_interval(47), False)
+      self.assertEqual(logic.in_an_interval(60), True)
+      self.assertEqual(logic.in_an_interval(92), False)
+      self.assertEqual(logic.in_an_interval(12), False)
+      self.assertEqual(logic.in_an_interval(15), True)
+      self.assertEqual(logic.in_an_interval(19), True)
+      self.assertEqual(logic.in_an_interval(101), True)
+      self.assertEqual(logic.in_an_interval(102), True)
+      self.assertEqual(logic.in_an_interval(103), True)
+
+
+# Run the unit tests.
+if __name__ == '__main__':
+   unittest.main()
+

@@ -1,0 +1,17 @@
+from quizFuncs import *
+L = [2, [5, -3], 7]
+L1 = [2,5,-3,7]
+
+Grade_HW1 = [99.10, 89.56, 75, 45, 99, 100, 88, 69, 79.65]
+Grade_HW2 = [90.18, 68.56, 100, 95, 99, 100, 91, 69, 99.65]
+Grade_HW3 = [89.40, 99.56, 100, 81, 85.5, 97, 71, 90.45, 86.65]
+
+
+
+print multiply_List(L,-2)
+
+#print average_List(L1)
+
+#print studntGrade(Grade_HW1, Grade_HW2, Grade_HW3)
+
+
